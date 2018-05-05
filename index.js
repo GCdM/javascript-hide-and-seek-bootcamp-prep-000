@@ -18,7 +18,7 @@ function deepestChild() {
   while (current.hasChildNodes()) {
     current = current.firstChild;
     if (current.firstChild === null) {
-      return current.parentElement;
+      return current.firstChild;
     }
   }
 }
