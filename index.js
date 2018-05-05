@@ -19,5 +19,5 @@ function deepestChild() {
   while (current.firstChild !== null) {
     current = current.firstChild;
   }
-  return current;
+  return current.innerHTML;
 }
