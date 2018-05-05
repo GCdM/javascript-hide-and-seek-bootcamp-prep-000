@@ -21,7 +21,7 @@ function deepestChild() {
   var next = [];
   
   while (isParent(current)) {
-    current = current.querySelector('div');
+    current = current.firstChild;
   }
   return current;
 }
